@@ -24,6 +24,7 @@ namespace Mwa.Api.Controllers
 
 
         [HttpPost]
+        [AllowAnonymous]
         [Route("v1/customers")]
         public async Task<IActionResult> Post([FromBody]RegisterCustomerComand command)
         {
