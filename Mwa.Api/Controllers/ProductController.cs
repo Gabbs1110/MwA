@@ -17,6 +17,7 @@ namespace Mwa.Api.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         [Route("v1/products")]
         public IActionResult Get(){
 
