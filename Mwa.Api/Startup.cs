@@ -104,6 +104,7 @@ namespace Mwa.Api
             services.AddTransient<ICustumerRepository, CustomerRepository>();
             services.AddTransient<IOrderRepository, OrderRepository>();
             services.AddTransient<CustomerComandHandler, CustomerComandHandler>();
+            services.AddTransient<OrdeComandHandler, OrdeComandHandler>();
             services.AddTransient<IEmailService, EmailService>();
             services.AddTransient<IUoW, UoW>();
 
